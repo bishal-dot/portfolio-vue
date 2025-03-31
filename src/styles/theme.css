@@ -168,7 +168,7 @@ header nav .ham-menu{
 }
 .about-details .a-skills p{
     cursor: pointer;
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: bold;
 }
 .about-details .about-field{
@@ -186,10 +186,10 @@ header nav .ham-menu{
 }
 .about-details .about-field h6{
     color: var(--accent);
-    font-size: 18pt;
+    font-size: 14pt;
 }
 .about-details .about-field span{
-    font-size: 14pt;
+    font-size: 12pt;
 }
 .about-details .about-field p{
     font-size: 12pt;
@@ -270,7 +270,22 @@ header nav .ham-menu{
 .service-container .s-section p{
     font-size: 12pt;
 }
-.service-container .s-btn{
+
+/* lets work together */
+.w-section{
+    background-color: var(--secondary);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+}
+.w-section h2{
+    font-size: 18pt;
+    color: var(--accent);
+}
+.w-section .s-btn button{
     margin-top: 20px;
     width: 240px;
     padding: 20px;
@@ -279,17 +294,82 @@ header nav .ham-menu{
     background-color: var(--background);
     cursor: pointer;
 }
-.service-container .s-btn p{
+.w-section .s-btn button{
     font-size: 12pt;
 }
-.service-container .s-btn:hover{
+.w-section .s-btn button:hover{
     background-color: var(--primary);
+    color: var(--secondary);
 }
-.service-container .s-btn p:hover{
+/* projects */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 100px auto;
+}
+.project-container .p-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.project-container .p-heading span{
+    font-size: 11pt;
+}
+.project-container .p-heading h2{
+    font-size: 24pt;
+    color: var(--accent);
+}
+.project-lists{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center; 
+}
+.project-lists .project-details{
+    background-color: var(--secondary);
+    cursor: pointer;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid var(--border);
+    padding:30px;
+    border-radius: 10px;
+}
+.project-lists .project-details .image{
+    width: 320px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.project-lists .project-details .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-lists .project-details h3{
+    font-size: 16pt;
+}
+.project-lists .project-details .btn button{
+    padding: 15px 30px;
+    color: var(--text);
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.project-lists .project-details .btn button:hover{
+    background-color: var(--primary);
     color: var(--secondary);
 }
 
+
+/* contact section */
 .contact-container{
+    margin: 100px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -395,4 +475,7 @@ footer .span p{
     font-size: 10pt;
     text-align: center;
     text-transform: capitalize;
+}
+footer .span strong{
+    color: var(--accent);
 }

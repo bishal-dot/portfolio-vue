@@ -2,7 +2,7 @@
     <footer>
         <div class="wrapper">
             <div class="span">
-                <P>copyright&copy; 2025. all rights reserved</P>
+                <P>copyright&#169; 2025 developed by <strong>bishal</strong>. all rights reserved</P>
             </div>
         </div>
     </footer>

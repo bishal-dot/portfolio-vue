@@ -1,10 +1,12 @@
 <script setup>
-  import Header from './components/Header.vue';
-  import Footer from './components/Footer.vue';
-  import HomeContainer from './components/HomeContainer.vue'
-import AboutContainer from './components/AboutContainer.vue';
-import ServicesContainer from './components/ServicesContainer.vue';
-import ContactContainer from './components/ContactContainer.vue';
+    import Header from './components/Header.vue';
+    import Footer from './components/Footer.vue';
+    import HomeContainer from './components/HomeContainer.vue'
+    import AboutContainer from './components/AboutContainer.vue';
+    import ServicesContainer from './components/ServicesContainer.vue';
+    import ContactContainer from './components/ContactContainer.vue';
+    import WorkSection from './components/WorkSection.vue';
+    import ProjectContainer from './components/ProjectContainer.vue';
 </script>
 
 <template>
@@ -12,11 +14,15 @@ import ContactContainer from './components/ContactContainer.vue';
     <!-- landing page -->
     <HomeContainer/>
     <!-- About Me section -->
-     <AboutContainer/>
-     <!-- services section -->
-     <ServicesContainer/>
-     <!-- contact me section -->
-     <ContactContainer/>
+    <AboutContainer/>
+    <!-- services section -->
+    <ServicesContainer/>
+    <!-- lets work together -->
+    <WorkSection/>
+    <!-- contact me section -->
+    <ProjectContainer/>
+    <ContactContainer/>
+     
 
     <Footer/>
 </template>
