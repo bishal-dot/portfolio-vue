@@ -8,7 +8,7 @@
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> abc@example.com</p>
                 <p><i class="fas fa-phone"></i> +977-9800000000</p>
-                <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                <p><i class="fas fa-map-marker-alt"></i> Gaindakot-8, Nawalpur</p>
             </div>
             <div class="c-icons">
                 <i class="fab fa-facebook"></i>  

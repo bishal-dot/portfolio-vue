@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root{
-    --hf: #0D1117;
+    --hf: #151b23;
     --text: #ededed;
-    --primary: #eb024e;
+    --primary: #00D4FF;
+    --accent:#FF4081;
     --secondary: #1d2531;
-    --background: #111823;
+    --background: #212830;
     --heading: #F5F5F5;
-}
-.dark-mode{
-    --background: #0D1117;
-    --primary: #1E88E5;
-    --text: #212121;
-    --secondary: #22C55E;
-    
+    --border: white;
 }
 *{
     margin: 0;
