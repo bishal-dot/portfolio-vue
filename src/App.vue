@@ -13,7 +13,9 @@ import ContactContainer from './components/ContactContainer.vue';
     <HomeContainer/>
     <!-- About Me section -->
      <AboutContainer/>
+     <!-- services section -->
      <ServicesContainer/>
+     <!-- contact me section -->
      <ContactContainer/>
 
     <Footer/>

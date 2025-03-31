@@ -23,6 +23,25 @@ header nav a{
     text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 13pt;
+    position: relative;
+}
+header nav a:hover{
+    color: var(--primary);
+}
+header nav a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    /* background-color: white; */
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+header nav a:hover::after{
+    transform: scaleX(1);
+    background-color: var(--primary);
 }
 header nav .logo {
     width: 140px;
@@ -95,11 +114,11 @@ header nav .ham-menu{
 }
 /* about section */
 .about-container{
-    height: 80vh;
+    height: 90vh;
     margin: 50px auto;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items:center;
+    justify-content: space-evenly;
 }
 .about-image-container{
     width: 400px;
@@ -120,20 +139,45 @@ header nav .ham-menu{
 }
 .about-details h1{
     font-size: 36pt;
-    color: var(--text);
+    color: var(--primary);
 }
 .about-details p{
     font-size: 13pt;
     color: var(--text);
     line-height: 28px;
 }
-.about-details ul{
+.about-details .a-skills{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.about-details ul li{
+.about-details .a-skills p{
     cursor: pointer;
+    position: relative;
+}
+.about-details .a-skills p:hover{
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+.about-details .a-skills p::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.about-details .a-skills p:hover::after{
+    transform: scaleX(1);
+}
+.about-details .about-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .about-details .about-field span{
     color: var(--primary);
@@ -157,7 +201,7 @@ header nav .ham-menu{
 }
 /* service section */
 .service-container{
-    height: 80vh;
+    height: 90vh;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -168,6 +212,7 @@ header nav .ham-menu{
 .service-container .s-heading h1{
     font-size: 36pt;
     text-transform: capitalize;
+    color: var(--primary);
 }
 .service-container .s-heading p{
     font-size: 13pt;
@@ -214,7 +259,7 @@ header nav .ham-menu{
 }
 
 .contact-container{
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -227,7 +272,7 @@ header nav .ham-menu{
 }
 .contact-heading h2{
     font-size: 32pt;
-    color: var(--text);
+    color: var(--primary);
 }
 .contact-heading p{
     font-size: 12pt;
@@ -278,17 +323,23 @@ header nav .ham-menu{
     border-radius: 5px;
 }
 .contact-form .sbt-btn button{
-    width: 160px;
+    width: 140px;
     background-color: var(--background);
     border: 1px solid white;
-    padding: 18px;
+    padding: 10px 16px;
     border-radius: 10px;
-    font-size: 13pt;
+    font-size: 14pt;
     text-transform: capitalize;
     cursor: pointer;
 }
 .contact-form .sbt-btn button:hover{
     background-color: var(--primary);
+}
+.contact-links .c-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 /* footer */
 footer{
