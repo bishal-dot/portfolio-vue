@@ -3,7 +3,7 @@
        <div class="contact-links">
             <div class="contact-heading">
                 <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">Have a project in mind? Send me a message.</p>
+                <p class="section-subtitle">Let’s Build Something Amazing Together!</p>
             </div>
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> abc@example.com</p>
@@ -21,6 +21,10 @@
             </div>
         </div>
         <div class="contact-form">
+            <div class="contact-heading">
+                <h2 class="section-title">Get in touch</h2>
+                <p class="section-subtitle">Have a project in mind? Send me a message.</p>
+            </div>
             <div class="inp">
                 <input type="text" placeholder="Name">
             </div>

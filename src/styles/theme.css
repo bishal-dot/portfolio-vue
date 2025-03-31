@@ -6,12 +6,16 @@
 }
 header{
     background-color: var(--hf);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    /* height: 80px; */
     padding: 10px;
 }
 header nav .navlinks{
@@ -59,7 +63,7 @@ header nav .ham-menu{
     cursor: pointer;
 }
 .hero-container{
-    height: 80vh;
+    height: 100vh;
     margin: 50px auto;
     display: flex;
     align-items: center;
@@ -94,16 +98,22 @@ header nav .ham-menu{
     font-size: 30pt;
     color: var(--accent);
 }
-.hero-detail-section .hero-dtl-btn button{
-    width: 180px;
-    background-color: var(--background);
-    padding: 10px 20px;
-    text-transform: capitalize;
-    border: 1px solid white;
-    border-radius: 10px;
-    cursor: pointer;
+.hero-detail-section .hero-dtl-btn{
+    display: flex;
+    gap: 20px;
 }
-.hero-detail-section .hero-dtl-btn button:hover{
+.hero-detail-section .hero-dtl-btn .abt-btn button{
+    width: 160px;
+    background-color: var(--background);
+    padding: 10px;
+    font-size: 13pt;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text);
+    text-transform: capitalize;
+}
+.hero-detail-section .abt-btn button:hover{
     background-color: var(--primary);
     color: var(--secondary);
 }
@@ -115,10 +125,8 @@ header nav .ham-menu{
 }
 /* about section */
 .about-container{
-    height: 90vh;
     margin: 50px auto;
     display: flex;
-    align-items:center;
     justify-content: space-evenly;
 }
 .about-image-container{
@@ -147,6 +155,11 @@ header nav .ham-menu{
     color: var(--text);
     line-height: 28px;
 }
+.about-details .a-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .about-details .a-skills{
     display: flex;
     align-items: center;
@@ -154,62 +167,74 @@ header nav .ham-menu{
 }
 .about-details .a-skills p{
     cursor: pointer;
-    position: relative;
-}
-.about-details .a-skills p:hover{
-    color: var(--accent);
-    transition: 0.3s ease;
-}
-.about-details .a-skills p::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: -5px;
-    background-color: var(--accent);
-    transform: scaleX(0);
-    transition: 0.3s;
-    border-radius: 10px;
-}
-.about-details .a-skills p:hover::after{
-    transform: scaleX(1);
+    font-size: 18pt;
+    font-weight: bold;
 }
 .about-details .about-field{
+    display: block;
+}
+.about-details .about-field ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+.about-details .about-field ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.about-details .about-field h6{
+    color: var(--accent);
+    font-size: 18pt;
 }
 .about-details .about-field span{
-    color: var(--accent);
-    font-size: 13pt;
+    font-size: 14pt;
 }
 .about-details .about-field p{
     font-size: 12pt;
 }
-.about-details .abt-btn button{
-    width: 160px;
-    background-color: var(--background);
-    padding: 10px;
-    font-size: 13pt;
-    border: 1px solid white;
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+.skills-container h2{
+    color: var(--accent);
+}
+.skills-container .skill{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.skills-container .skill-label{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar {
+    height: 8px;
+    width: 100%;
+    background-color: #e0e0e0;
     border-radius: 5px;
-    cursor: pointer;
-    color: var(--text);
-}
-.about-details .abt-btn button:hover{
+    overflow: hidden;
+  }
+  
+  .fill {
+    height: 100%;
     background-color: var(--primary);
-    color: var(--secondary);
-}
+    transition: width 1s ease-in-out;
+  }
+
 /* service section */
 .service-container{
-    height: 90vh;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 40px;
+    padding: 50px 0px 50px 0px;
 }
 .service-container .s-heading h1{
     font-size: 36pt;
@@ -264,11 +289,11 @@ header nav .ham-menu{
 }
 
 .contact-container{
-    height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
+    padding: 50px 0px;
 }
 .contact-links{
     display: flex;

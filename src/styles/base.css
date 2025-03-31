@@ -32,4 +32,10 @@ body{
 .hide{
     display: none !important;
 }
+.active{
+    display: block !important;
+}
+.selected{
+    color: var(--accent) !important;
+}
 

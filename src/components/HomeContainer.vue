@@ -12,7 +12,12 @@
                 <p>hello <br> <strong>i'm bishal</strong><br>Frontend Developer</p>
             </span>
             <div class="hero-dtl-btn">
-                <button>hire me</button>
+                <div class="abt-btn">
+                    <button>hire me</button>
+                </div>
+                <div class="abt-btn">
+                    <button>Download CV</button>
+                 </div>
             </div>
             <div class="hero-scl-links">
                 <div class="icon">
