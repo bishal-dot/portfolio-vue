@@ -1,0 +1,308 @@
+@import url(base.css);
+
+.wrapper{
+    width: 1220px;
+    margin: auto;
+}
+header{
+    background-color: var(--hf);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px;
+}
+header nav .navlinks{
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    color: var(--text);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 13pt;
+}
+header nav .logo {
+    width: 140px;
+    height: 80px;
+    overflow: hidden;
+}
+header nav .logo img{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    cursor: pointer;
+}
+header nav .ham-menu{
+    display: none;
+    cursor: pointer;
+}
+.hero-container{
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero-image-container{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hero-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-detail-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.hero-detail-section span p{
+    text-align: center;
+    font-size: 20pt;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.hero-detail-section span p strong{
+    font-size: 30pt;
+    color: var(--primary);
+}
+.hero-detail-section .hero-dtl-btn button{
+    width: 180px;
+    background-color: var(--background);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hero-detail-section .hero-dtl-btn button:hover{
+    background-color: var(--primary);
+}
+.hero-detail-section .hero-scl-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+/* about section */
+.about-container{
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-image-container{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.about-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-details{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-details h1{
+    font-size: 36pt;
+    color: var(--text);
+}
+.about-details p{
+    font-size: 13pt;
+    color: var(--text);
+    line-height: 28px;
+}
+.about-details ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-details ul li{
+    cursor: pointer;
+}
+.about-details .about-field span{
+    color: var(--primary);
+    font-size: 13pt;
+}
+.about-details .about-field p{
+    font-size: 12pt;
+}
+.about-details .abt-btn button{
+    width: 160px;
+    background-color: var(--background);
+    padding: 10px;
+    font-size: 13pt;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text);
+}
+.about-details .abt-btn button:hover{
+    background-color: var(--primary);
+}
+/* service section */
+.service-container{
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.service-container .s-heading h1{
+    font-size: 36pt;
+    text-transform: capitalize;
+}
+.service-container .s-heading p{
+    font-size: 13pt;
+}
+.service-container .s-services{
+    display: flex;
+    gap: 30px;
+}
+.service-container .s-section{
+    width: 400px;
+    background-color: var(--secondary);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.service-container .s-section img{
+    width: 60px;
+    height: 60px;
+}
+.service-container .s-section h3{
+    font-size: 24pt;
+}
+.service-container .s-section p{
+    font-size: 12pt;
+}
+.service-container .s-btn{
+    margin-top: 20px;
+    width: 240px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: var(--background);
+    cursor: pointer;
+}
+.service-container .s-btn p{
+    font-size: 12pt;
+}
+.service-container .s-btn:hover{
+    background-color: var(--primary);
+}
+
+.contact-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-heading h2{
+    font-size: 32pt;
+    color: var(--text);
+}
+.contact-heading p{
+    font-size: 12pt;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-info p{
+    font-size: 12pt;
+}
+.contact-links .btn{
+    width: 150px;
+    text-align: center;
+    background-color: var(--background);
+    border: 1px solid white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact-links .btn p{
+    font-size: 13pt;
+}
+.contact-links .btn:hover{
+    background-color: var(--primary);
+}
+.contact-form{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form .inp input{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 12pt;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form .inp input:focus{
+    border:none;
+}
+.contact-form textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.contact-form .sbt-btn button{
+    width: 160px;
+    background-color: var(--background);
+    border: 1px solid white;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 13pt;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.contact-form .sbt-btn button:hover{
+    background-color: var(--primary);
+}
+/* footer */
+footer{
+    margin-top: 50px;
+    background-color: var(--hf);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .span p{
+    color: var(--text);
+    letter-spacing: 1.5px;
+    font-size: 10pt;
+    text-align: center;
+    text-transform: capitalize;
+}
