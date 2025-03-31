@@ -116,6 +116,7 @@ header nav .ham-menu{
 .hero-detail-section .abt-btn button:hover{
     background-color: var(--primary);
     color: var(--secondary);
+    transition: 0.3s ease;
 }
 .hero-detail-section .hero-scl-links{
     display: flex;

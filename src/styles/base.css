@@ -17,7 +17,7 @@
     box-sizing: border-box;
     font-family: "JetBrains Mono", monospace;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 12pt;
     color: var(--text);
 }
 html{
@@ -37,5 +37,6 @@ body{
 }
 .selected{
     color: var(--accent) !important;
+    border-bottom: 2px solid var(--accent);
 }
 
