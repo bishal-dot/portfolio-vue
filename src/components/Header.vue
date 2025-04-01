@@ -27,15 +27,14 @@
                 </div>
             </div>
             <div class="ham-menu">
-                <div class="menu">
-                    <img src="./../assets/hamMenu.svg" alt="hamMenu">
-                </div>
                 <div class="mode-action">
                     <img v-if="!isDarkMode" src="./../assets/dark.svg"  alt="dark" @click="theme">
                     <img v-else src="./../assets/light.svg" alt="light" @click="theme">
                 </div>
+                <div class="menu">
+                    <img src="./../assets/hamMenu.svg" alt="hamMenu">
+                </div>
             </div>
-            
         </nav>
     </header>
 </template>
