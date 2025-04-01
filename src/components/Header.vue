@@ -3,9 +3,16 @@
     import { ref } from 'vue';
 
     const isDarkMode = ref(false);
+    
+    let ShowModel = ref(false);
+ 
     const theme = () => {
         isDarkMode.value = !isDarkMode.value;
         document.body.classList.toggle('dark-mode');
+    }
+
+    let closeModel = () => {
+        ShowModel.value = false;
     }
 
 </script>
@@ -32,9 +39,20 @@
                     <img v-else src="./../assets/light.svg" alt="light" @click="theme">
                 </div>
                 <div class="menu">
-                    <img src="./../assets/hamMenu.svg" alt="hamMenu">
+                    <img v-if="!ShowModel" src="./../assets/hamMenu.svg" alt="hamMenu" @click="ShowModel = true">
+                    <img v-else src="./../assets/close.svg" alt="close" @click="closeModel">
                 </div>
             </div>
         </nav>
+        <div class="menulinks" v-if="ShowModel">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
+            </div>
+            
+        </div>
     </header>
 </template>

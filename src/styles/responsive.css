@@ -113,6 +113,9 @@ smaller than 768
     .navlinks{
         display: none !important;   
     }
+    .menulinks{
+        display: flex;
+    }
 
     .ham-menu{
         display: flex !important;
@@ -148,7 +151,7 @@ smaller than 680
 
 @media screen and (max-width: 680px) {
     .wrapper{
-        width: 100% !important;
+        width: 95% !important;
     }
     .hero-container{
         flex-direction: column;

@@ -11,6 +11,7 @@ header{
     width: 100%;
     top: 0;
     backdrop-filter: blur(10px);
+    z-index: 2;
 }
 header nav{
     display: flex;
@@ -63,6 +64,31 @@ header nav .logo img{
 }
 header nav .ham-menu{
     display: none;
+    position: relative;
+}
+.menulinks{
+    width: 50%;
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hf);
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    top: 60px;
+    z-index: 1;
+}
+.menulinks .links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.menulinks .links a{
+    color: var(--heading);
 }
 .menu{
     cursor: pointer;
