@@ -109,6 +109,10 @@ header nav .ham-menu{
     border-radius: 50%;
     overflow: hidden;
 }
+.hero-image-container:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 5px 2px var(--accent);
+}
 .hero-image-container img{
     width: 100%;
     height: 100%;
