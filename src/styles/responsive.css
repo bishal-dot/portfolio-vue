@@ -181,8 +181,9 @@ smaller than 480
         top: -10px;
     }
     .hero-container{
-        margin: 50px auto;
-        gap: 0px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
     .about-image-container{
         width: 320px;
