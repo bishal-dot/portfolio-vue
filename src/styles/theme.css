@@ -294,6 +294,7 @@ header nav .ham-menu{
     cursor: pointer;
     border-radius: 10px;
     border: 1px solid var(--border);
+    box-shadow: 1px 5px 20px 0px var(--accent);
 }
 .service-container .s-section img{
     width: 60px;
