@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root{
+    --hf: #212830;
+    --text: #1A1A1A;
+    --primary: #0066FF;
+    --accent:#FF4081;
+    --secondary: #F9FAFC ;
+    --background: #F8FAFD;
+    --heading: #F5F5F5;
+    --border: #1A1A1A;
+}
+.dark-mode{
     --hf: #151b23;
     --text: #ededed;
     --primary: #00D4FF;
