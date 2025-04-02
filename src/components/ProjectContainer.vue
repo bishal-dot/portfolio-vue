@@ -1,5 +1,5 @@
 <template>
-    <div class="project-container wrapper">
+    <div class="project-container wrapper" id="projects"> 
         <div class="p-heading">
             <span>Browse My Recent</span>
             <h2>My Projects</h2>
@@ -12,6 +12,8 @@
                 <h3>TODO Task List</h3>
                 <div class="btn">
                     <button>GitHub</button>
+                    <button>Preview</button>
+
                 </div>
             </div>
             <div class="project-details">
@@ -21,6 +23,7 @@
                 <h3>E-Commerce (Superbike)</h3>
                 <div class="btn">
                     <button>GitHub</button>
+                    <button>Preview</button>
                 </div>
             </div>
             <div class="project-details">
@@ -30,6 +33,7 @@
                 <h3>ChatBox</h3>
                 <div class="btn">
                     <button>GitHub</button>
+                    <button>Preview</button>
                 </div>
             </div>
         </div>

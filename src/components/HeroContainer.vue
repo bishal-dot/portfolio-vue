@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
     <div class="hero-container wrapper" id="home">
         <div class="hero-image-container">
