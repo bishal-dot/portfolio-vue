@@ -421,7 +421,7 @@ header nav .ham-menu{
     margin: 100px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding: 50px 0px;
 }

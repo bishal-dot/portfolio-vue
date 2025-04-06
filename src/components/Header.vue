@@ -23,11 +23,11 @@
                 <img src="./../assets/logo.png" alt="logo">
             </div>
             <div class="navlinks">
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">services</a>
-                <a href="#">projects</a>
-                <a href="#">contact</a>
+                <a href="/#home">Home</a>
+                <a href="/#about">About</a>
+                <a href="/#services">Services</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#contact">Contact</a>
                 <div class="mode-action">
                     <img v-if="!isDarkMode" src="./../assets/dark.svg"  alt="dark" @click="theme">
                     <img v-else src="./../assets/light.svg" alt="light" @click="theme">
@@ -46,13 +46,12 @@
         </nav>
         <div class="menulinks" v-if="ShowModel">
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="/#home" @click="closeModel">Home</a>
+                <a href="/#about" @click="closeModel">About</a>
+                <a href="/#services" @click="closeModel">Services</a>
+                <a href="/#projects" @click="closeModel">Projects</a>
+                <a href="/#contact" @click="closeModel">Contact</a>
             </div>
-            
         </div>
     </header>
 </template>
