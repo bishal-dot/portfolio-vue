@@ -3,8 +3,8 @@
 :root{
     --hf: #212830;
     --text: #1A1A1A;
-    --primary: #0066FF;
-    --accent:#FF4081;
+    --accent: #0066FF;
+    --primary:#FF4081;
     --secondary: #F9FAFC ;
     --background: #F8FAFD;
     --heading: #F5F5F5;
@@ -13,8 +13,8 @@
 .dark-mode{
     --hf: #151b23;
     --text: #ededed;
-    --primary: #00D4FF;
-    --accent:#FF4081;
+    --accent: #00D4FF;
+    --primary:#FF4081;
     --secondary: #1d2531;
     --background: #212830;
     --heading: #F5F5F5;

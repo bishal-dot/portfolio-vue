@@ -119,7 +119,7 @@ smaller than 768
 
     .ham-menu{
         display: flex !important;
-        gap: 20px;
+        gap: 10px;
         align-items: center;
     }
       .hero-image-container{
