@@ -4,12 +4,12 @@ import { ref } from 'vue';
 
     const skills = ref([
         {
-            name: 'HTML',
+            name: 'HTML/CSS',
             percentage: 90
         },
         {
-            name: 'CSS',
-            percentage: 90
+            name: 'Tailwind CSS',
+            percentage: 87
         },
         {
             name: 'Javascript',
@@ -40,5 +40,4 @@ import { ref } from 'vue';
             </div>
         </div>
     </div>
-    
 </template>

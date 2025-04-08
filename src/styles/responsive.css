@@ -142,6 +142,9 @@ smaller than 768
 .contact-form{
     width: 500px;
 }
+.project-lists{
+    gap: 30px;
+}
 
 }
 

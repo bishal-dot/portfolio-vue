@@ -7,6 +7,7 @@
     import ContactContainer from './components/ContactContainer.vue';
     import WorkSection from './components/WorkSection.vue';
     import ProjectContainer from './components/ProjectContainer.vue';
+import FAQs from './components/FAQs.vue';
 </script>
 
 <template>
@@ -21,6 +22,8 @@
     <WorkSection/>
 
     <ProjectContainer/>
+
+    <FAQs/>
 
     <ContactContainer/>
      
